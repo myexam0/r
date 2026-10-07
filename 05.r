@@ -59,28 +59,3 @@ cat("\n--- Anonymous Function ---\n")
 numbers_vec <- c(1, 2, 3, 4, 5) 
 squared <- sapply(numbers_vec, function(x) x^2) 
 cat("Squared values:", squared, "\n")
-
-
-Sample Input and Output
-Name = Students
-Rectangle Dimensions = 5, 3
-Base = 5
-Exponent = 3
-Numbers = 10, 20, 30, 40, 50
-Factorial Number = 5
-Sum Inputs = 1, 2, 3, 4, 5
-Vector = 1, 2, 3, 4, 5
-Sample Output
-Hello Students ! Welcome to R Programming
-Area of rectangle (5x3): 15
-5^3 = 125
-Mean = 30
-Median = 30
-Standard Deviation = 15.81139
-Minimum = 10
-Maximum = 50
-Factorial of 5: 120
-
-Sum of 1,2,3,4,5: 15
-
-Squared values: 1 4 9 16 25
