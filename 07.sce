@@ -1,0 +1,12 @@
+image1=imread("C:\Users\student\Documents\image lab\images.jpeg");
+image2=imread("C:\Users\student\Documents\image lab\images.jpeg");
+gray1=rgb2gray(image1);
+gray2=rgb2gray(image2);
+mean_value=mean(double(gray1));
+disp(mean_value);
+std_deviation=stdev(double(gray1));
+disp(std_deviation);
+x=matrix(double(gray1),-1,1);
+y=matrix(double(gray2),-1,1);
+correlation_coefficient=sum((x-mean(x)).*(y-mean(y)))/sqrt(sum((x-mean(x)).^2)*sum((y-mean(y)).^2));
+disp(correlation_coefficient);

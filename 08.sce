@@ -1,0 +1,10 @@
+img=imread("C:\Users\student\Documents\image lab\images.jpeg.jpg");
+g=rgb2gray(img);
+mean_filter=imfilter(g,ones(3,3)/9);
+figure();
+imshow(mean_filter);
+xtitle("mean.filter");
+median_image=immedian(g,3);
+figure();
+imshow(median_image);
+xtitle("median filter");

@@ -1,0 +1,12 @@
+img=imread("C:\Users\student\Documents\image lab\download.jpg");
+g=rgb2gray(img);
+figure();imshow(g);xtitle("Gray");
+figure();
+d=log(1+abs(fftshift(fft2(double(g)))));
+imshow(uint8(255*d/max(d)));
+xtitle("DFT");
+figure();
+c=log(1+abs(dct(double(g))));
+imshow(uint8(255*c/max(c)));
+xtitle("DCT");
+disp("completed");

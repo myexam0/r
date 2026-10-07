@@ -1,0 +1,12 @@
+a = imread("C:\Users\student\Documents\image lab\images.jpeg3");
+n = imnoise(a,"salt & pepper",0.02);
+r = imfilter(n,ones(3,3)/9);
+subplot(1,3,1);
+imshow(a);
+title("Original");
+subplot(1,3,2);
+imshow(n);
+title("Noisy");
+subplot(1,3,3);
+imshow(r);
+title("Restored");

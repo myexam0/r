@@ -1,0 +1,11 @@
+identify_matrix=eye(3,3);
+zeros_matrix=zeros(3,3);
+ones_matrix=ones(3,3);
+random_matrix=rand(3,3);
+a=[1,2,3;4,5,6;7,8,9];
+transpose_matrix=a;
+disp(identify_matrix);
+disp(zeros_matrix);
+disp(ones_matrix);
+disp(transpose_matrix);
+disp(random_matrix);
